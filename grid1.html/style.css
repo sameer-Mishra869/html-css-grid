@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f0f4f8;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.container {
+    display: grid;
+    border: 2px dashed #444;
+    padding: 15px;
+    background-color: #7c4040;
+}
+
+.box {
+    background-color: #ffcccb;   /* light coral */
+    border: 1px solid #333;
+    padding: 25px;
+    margin: 8px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #020617;
+    color: #e5e7eb;
+    padding: 25px;
+}
+
+h2 {
+    text-align: center;
+    color: #facc15;
+    margin-bottom: 20px;
+}
+
+/* default layout (no grid) */
+.container {
+    background-color: #0f172a;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.box {
+    background-color: #1e293b;
+    padding: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #475569;
+}
+
+/* apply grid only if supported */
+@supports (display: grid) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .box {
+        margin-bottom: 0; /* gap handles spacing */
+    }
+}
+
+.note {
+    font-size: 14px;
+    margin-bottom: 25px;
+    color: #a5f3fc;
+}
